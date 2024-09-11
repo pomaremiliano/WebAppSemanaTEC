@@ -3,8 +3,6 @@ export interface Pokemones {
     name: string;
     height: number;
     weight: number;
-    abilities: string[];
-    types: string[];
     sprites: { 
         front_default: string;
     };
