@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div>
       <h1 className="container text-center my-8">
-        Bienvenido a nuestra web de semana Tec
+        ¡Bienvenido a nuestra aplicación web!
       </h1>
       <div className="text-slate-500 ml-10 mr-10">
         <h3 className="text-center mb-4 text-gray-50">Equipo 8:</h3>
@@ -42,6 +42,15 @@ export default function HomePage() {
         <FetchPerros />
         <FetchWeather />
       </div>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      <footer className="bg-gray-800 text-white p-4 text-center mt-8">
+        <p> Semana Tec - Conectando al Mundo Web | Septiembre 2024</p>
+      </footer>
     </div>
   );
 }
