@@ -8,8 +8,6 @@ export default function HomePage() {
       <FetchPokemones />
       <FetchPerros />
     </div>
-
-
   );
 }
 
