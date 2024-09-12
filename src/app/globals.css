@@ -36,7 +36,11 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-bold text-center
+}
+
+h4 {
+  @apply text-lg font-bold text-center text-slate-500;
 }
 
 button {
@@ -50,4 +54,58 @@ button {
 
 .pokemon-card {
   @apply bg-white shadow-lg rounded-lg p-6 max-w-xs;  
+}
+
+ul ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+ul {
+  @apply text-center
+}
+li{
+  @apply font-bold text-2xl
+}
+
+ol {
+  list-style-type: upper-roman; /* Cambia el tipo de numeración a números romanos en mayúscula */
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container1 {
+  display: grid;
+  place-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* styles.module.css */
+.container {
+  display: grid;
+  place-items: center;
+  text-wrap: balance;
+  text-align: left;
+}
+
+.gridContainer {
+  max-width: 80%; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+p{
+  @apply text-2xl
+}
+
+.mi-elemento {
+  margin-top: 10px; /* Margen superior de 10 píxeles */
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: white;
 }

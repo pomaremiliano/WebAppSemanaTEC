@@ -13,3 +13,14 @@ export interface Perros {
     status: string;
 }
 
+export interface Weather {
+    main : {
+        temp: number;
+        humidity: number;
+    };
+    weather: {
+        description: string;
+        icon: string;
+    }[];
+    name: string;
+}

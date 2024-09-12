@@ -31,6 +31,7 @@ export default function FetchPerros() {
 
     return (
         <div className="pokemon-card-container">
+            <div><p className="mi-elemento">¿Quieres un perrito al azar? da click aquí</p></div>
             <button onClick={onClick}>Random</button>
             {loading && <div>Loading...</div>}
             {error && <div>Error: {error}</div>}
