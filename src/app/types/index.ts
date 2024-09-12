@@ -8,3 +8,8 @@ export interface Pokemones {
     };
 }
 
+export interface Perros {
+    message: string;
+    status: string;
+}
+
