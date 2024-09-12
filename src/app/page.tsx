@@ -1,26 +1,47 @@
 import FetchPokemones from "./components/FetchPokemones";
 import FetchPerros from "./components/FetchPerros";
+import FetchWeather from "./components/FetchWeather";
 
 export default function HomePage() {
-  
   return (
     <div>
-      <h1 className="container">
+      <h1 className="container text-center my-8">
         Bienvenido a nuestra web de semana Tec
       </h1>
-      <div className="container">
-        <h3>Equipo 8:</h3>
-      <ul>
-  <li className="container">Jorge Emiliano Pomar Mendoza A01709338  <ul> <li> @pomaremiliano</li></ul> </li>
-  <li className="container">Ivan Ricardo Paredes Avilez A01705083  <ul> <li> @IvanParedesA</li></ul> </li>
-  <li className="container">Diego Reséndiz Fernández A01708017 <ul> <li> @Diego-spes</li></ul> </li>
-  <li className="container">Francisco Couttolenc Ortiz A01754959  <ul> <li>@Couttolenc01</li></ul> </li>
-</ul> </div>
-      
-      <FetchPokemones />
-      <FetchPerros />
+      <div className="text-slate-500 ml-10 mr-10">
+        <h3 className="text-center mb-4 text-gray-50">Equipo 8:</h3>
+        <ul className="grid grid-cols-4 gap-4">
+          <li className="container p-4 border rounded shadow bg-white">
+            Jorge Emiliano Pomar Mendoza A01709338
+            <ul>
+              <li>@pomaremiliano</li>
+            </ul>
+          </li>
+          <li className="container p-4 border rounded shadow bg-white">
+            Ivan Ricardo Paredes Avilez A01705083
+            <ul>
+              <li>@IvanParedesA</li>
+            </ul>
+          </li>
+          <li className="container p-4 border rounded shadow bg-white">
+            Diego Reséndiz Fernández A01708017
+            <ul>
+              <li>@Diego-spes</li>
+            </ul>
+          </li>
+          <li className="container p-4 border rounded shadow bg-white">
+            Francisco Couttolenc Ortiz A01754959
+            <ul>
+              <li>@Couttolenc01</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div className="grid grid-cols-3 gap-4 mt-8">
+        <FetchPokemones />
+        <FetchPerros />
+        <FetchWeather />
+      </div>
     </div>
   );
 }
-
-
